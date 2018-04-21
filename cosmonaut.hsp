@@ -46,7 +46,7 @@ mci "setaudio flying volume to 50"
 #include "hspinet.as"
 netinit
 
-URL = "http://nnct-mvccc.sakura.ne.jp/cosmonaute/"
+URL = "cosmonaute/"
 
 *entrypoint
 gosub *xorshift_init
@@ -935,14 +935,14 @@ loop
 	if "" + score != score_bak {
 		goto *entrypoint
 	}
-	rc4encode name, "fejoairueajfaoieurajfahjkl"
+	rc4encode name, "myon"
 	
 	b642 = ""
 	b64encode b642, name
 	b642 = "" + b642
 	
 	score = "" + score
-	rc4encode score, "efa80eriakjfiu9aejfoviu9aejfaivyuija3h8a7y2" + b642
+	rc4encode score, "nyarn" + b642
 	b641 = ""
 	b64encode b641, score
 	b641 = "" + b641
